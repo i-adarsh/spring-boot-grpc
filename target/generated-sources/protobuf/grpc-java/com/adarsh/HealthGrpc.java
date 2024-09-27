@@ -6,7 +6,7 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.58.0)",
-    comments = "Source: heathCheck.proto")
+    comments = "Source: healthCheck.proto")
 @io.grpc.stub.annotations.GrpcGenerated
 public final class HealthGrpc {
 
@@ -15,29 +15,29 @@ public final class HealthGrpc {
   public static final java.lang.String SERVICE_NAME = "Health";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.adarsh.HeathCheck.HealthCheckRequest,
-      com.adarsh.HeathCheck.HealthCheckResponse> getCheckMethod;
+  private static volatile io.grpc.MethodDescriptor<com.adarsh.HealthCheck.HealthCheckRequest,
+      com.adarsh.HealthCheck.HealthCheckResponse> getCheckMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Check",
-      requestType = com.adarsh.HeathCheck.HealthCheckRequest.class,
-      responseType = com.adarsh.HeathCheck.HealthCheckResponse.class,
+      requestType = com.adarsh.HealthCheck.HealthCheckRequest.class,
+      responseType = com.adarsh.HealthCheck.HealthCheckResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.adarsh.HeathCheck.HealthCheckRequest,
-      com.adarsh.HeathCheck.HealthCheckResponse> getCheckMethod() {
-    io.grpc.MethodDescriptor<com.adarsh.HeathCheck.HealthCheckRequest, com.adarsh.HeathCheck.HealthCheckResponse> getCheckMethod;
+  public static io.grpc.MethodDescriptor<com.adarsh.HealthCheck.HealthCheckRequest,
+      com.adarsh.HealthCheck.HealthCheckResponse> getCheckMethod() {
+    io.grpc.MethodDescriptor<com.adarsh.HealthCheck.HealthCheckRequest, com.adarsh.HealthCheck.HealthCheckResponse> getCheckMethod;
     if ((getCheckMethod = HealthGrpc.getCheckMethod) == null) {
       synchronized (HealthGrpc.class) {
         if ((getCheckMethod = HealthGrpc.getCheckMethod) == null) {
           HealthGrpc.getCheckMethod = getCheckMethod =
-              io.grpc.MethodDescriptor.<com.adarsh.HeathCheck.HealthCheckRequest, com.adarsh.HeathCheck.HealthCheckResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.adarsh.HealthCheck.HealthCheckRequest, com.adarsh.HealthCheck.HealthCheckResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Check"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.adarsh.HeathCheck.HealthCheckRequest.getDefaultInstance()))
+                  com.adarsh.HealthCheck.HealthCheckRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.adarsh.HeathCheck.HealthCheckResponse.getDefaultInstance()))
+                  com.adarsh.HealthCheck.HealthCheckResponse.getDefaultInstance()))
               .setSchemaDescriptor(new HealthMethodDescriptorSupplier("Check"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class HealthGrpc {
     return getCheckMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.adarsh.HeathCheck.HealthCheckRequest,
-      com.adarsh.HeathCheck.HealthCheckResponse> getWatchMethod;
+  private static volatile io.grpc.MethodDescriptor<com.adarsh.HealthCheck.HealthCheckRequest,
+      com.adarsh.HealthCheck.HealthCheckResponse> getWatchMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Watch",
-      requestType = com.adarsh.HeathCheck.HealthCheckRequest.class,
-      responseType = com.adarsh.HeathCheck.HealthCheckResponse.class,
+      requestType = com.adarsh.HealthCheck.HealthCheckRequest.class,
+      responseType = com.adarsh.HealthCheck.HealthCheckResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<com.adarsh.HeathCheck.HealthCheckRequest,
-      com.adarsh.HeathCheck.HealthCheckResponse> getWatchMethod() {
-    io.grpc.MethodDescriptor<com.adarsh.HeathCheck.HealthCheckRequest, com.adarsh.HeathCheck.HealthCheckResponse> getWatchMethod;
+  public static io.grpc.MethodDescriptor<com.adarsh.HealthCheck.HealthCheckRequest,
+      com.adarsh.HealthCheck.HealthCheckResponse> getWatchMethod() {
+    io.grpc.MethodDescriptor<com.adarsh.HealthCheck.HealthCheckRequest, com.adarsh.HealthCheck.HealthCheckResponse> getWatchMethod;
     if ((getWatchMethod = HealthGrpc.getWatchMethod) == null) {
       synchronized (HealthGrpc.class) {
         if ((getWatchMethod = HealthGrpc.getWatchMethod) == null) {
           HealthGrpc.getWatchMethod = getWatchMethod =
-              io.grpc.MethodDescriptor.<com.adarsh.HeathCheck.HealthCheckRequest, com.adarsh.HeathCheck.HealthCheckResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.adarsh.HealthCheck.HealthCheckRequest, com.adarsh.HealthCheck.HealthCheckResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Watch"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.adarsh.HeathCheck.HealthCheckRequest.getDefaultInstance()))
+                  com.adarsh.HealthCheck.HealthCheckRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.adarsh.HeathCheck.HealthCheckResponse.getDefaultInstance()))
+                  com.adarsh.HealthCheck.HealthCheckResponse.getDefaultInstance()))
               .setSchemaDescriptor(new HealthMethodDescriptorSupplier("Watch"))
               .build();
         }
@@ -127,15 +127,15 @@ public final class HealthGrpc {
 
     /**
      */
-    default void check(com.adarsh.HeathCheck.HealthCheckRequest request,
-        io.grpc.stub.StreamObserver<com.adarsh.HeathCheck.HealthCheckResponse> responseObserver) {
+    default void check(com.adarsh.HealthCheck.HealthCheckRequest request,
+        io.grpc.stub.StreamObserver<com.adarsh.HealthCheck.HealthCheckResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCheckMethod(), responseObserver);
     }
 
     /**
      */
-    default void watch(com.adarsh.HeathCheck.HealthCheckRequest request,
-        io.grpc.stub.StreamObserver<com.adarsh.HeathCheck.HealthCheckResponse> responseObserver) {
+    default void watch(com.adarsh.HealthCheck.HealthCheckRequest request,
+        io.grpc.stub.StreamObserver<com.adarsh.HealthCheck.HealthCheckResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getWatchMethod(), responseObserver);
     }
   }
@@ -169,16 +169,16 @@ public final class HealthGrpc {
 
     /**
      */
-    public void check(com.adarsh.HeathCheck.HealthCheckRequest request,
-        io.grpc.stub.StreamObserver<com.adarsh.HeathCheck.HealthCheckResponse> responseObserver) {
+    public void check(com.adarsh.HealthCheck.HealthCheckRequest request,
+        io.grpc.stub.StreamObserver<com.adarsh.HealthCheck.HealthCheckResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCheckMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void watch(com.adarsh.HeathCheck.HealthCheckRequest request,
-        io.grpc.stub.StreamObserver<com.adarsh.HeathCheck.HealthCheckResponse> responseObserver) {
+    public void watch(com.adarsh.HealthCheck.HealthCheckRequest request,
+        io.grpc.stub.StreamObserver<com.adarsh.HealthCheck.HealthCheckResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getWatchMethod(), getCallOptions()), request, responseObserver);
     }
@@ -202,15 +202,15 @@ public final class HealthGrpc {
 
     /**
      */
-    public com.adarsh.HeathCheck.HealthCheckResponse check(com.adarsh.HeathCheck.HealthCheckRequest request) {
+    public com.adarsh.HealthCheck.HealthCheckResponse check(com.adarsh.HealthCheck.HealthCheckRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCheckMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public java.util.Iterator<com.adarsh.HeathCheck.HealthCheckResponse> watch(
-        com.adarsh.HeathCheck.HealthCheckRequest request) {
+    public java.util.Iterator<com.adarsh.HealthCheck.HealthCheckResponse> watch(
+        com.adarsh.HealthCheck.HealthCheckRequest request) {
       return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
           getChannel(), getWatchMethod(), getCallOptions(), request);
     }
@@ -234,8 +234,8 @@ public final class HealthGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.adarsh.HeathCheck.HealthCheckResponse> check(
-        com.adarsh.HeathCheck.HealthCheckRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.adarsh.HealthCheck.HealthCheckResponse> check(
+        com.adarsh.HealthCheck.HealthCheckRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCheckMethod(), getCallOptions()), request);
     }
@@ -262,12 +262,12 @@ public final class HealthGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CHECK:
-          serviceImpl.check((com.adarsh.HeathCheck.HealthCheckRequest) request,
-              (io.grpc.stub.StreamObserver<com.adarsh.HeathCheck.HealthCheckResponse>) responseObserver);
+          serviceImpl.check((com.adarsh.HealthCheck.HealthCheckRequest) request,
+              (io.grpc.stub.StreamObserver<com.adarsh.HealthCheck.HealthCheckResponse>) responseObserver);
           break;
         case METHODID_WATCH:
-          serviceImpl.watch((com.adarsh.HeathCheck.HealthCheckRequest) request,
-              (io.grpc.stub.StreamObserver<com.adarsh.HeathCheck.HealthCheckResponse>) responseObserver);
+          serviceImpl.watch((com.adarsh.HealthCheck.HealthCheckRequest) request,
+              (io.grpc.stub.StreamObserver<com.adarsh.HealthCheck.HealthCheckResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -291,15 +291,15 @@ public final class HealthGrpc {
           getCheckMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              com.adarsh.HeathCheck.HealthCheckRequest,
-              com.adarsh.HeathCheck.HealthCheckResponse>(
+              com.adarsh.HealthCheck.HealthCheckRequest,
+              com.adarsh.HealthCheck.HealthCheckResponse>(
                 service, METHODID_CHECK)))
         .addMethod(
           getWatchMethod(),
           io.grpc.stub.ServerCalls.asyncServerStreamingCall(
             new MethodHandlers<
-              com.adarsh.HeathCheck.HealthCheckRequest,
-              com.adarsh.HeathCheck.HealthCheckResponse>(
+              com.adarsh.HealthCheck.HealthCheckRequest,
+              com.adarsh.HealthCheck.HealthCheckResponse>(
                 service, METHODID_WATCH)))
         .build();
   }
@@ -310,7 +310,7 @@ public final class HealthGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.adarsh.HeathCheck.getDescriptor();
+      return com.adarsh.HealthCheck.getDescriptor();
     }
 
     @java.lang.Override
