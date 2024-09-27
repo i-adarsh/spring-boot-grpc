@@ -51,3 +51,17 @@ grpcurl --plaintext -d '{"message": "How are you?"}' localhost:9090 HelloWorldSe
 "message": "Response from gRPC server"
 }
 ```
+
+
+```shell
+docker build -t grpc-java:v3 .
+docker tag grpc-java:v3 asia.gcr.io/adarshkr-web/grpc/grpc-java:v3
+docker push asia.gcr.io/adarshkr-web/grpc/grpc-java:v3
+```
+
+```shell
+for i in {1..5000}; do
+  grpcurl -proto src/main/proto/healthCheck.proto -d '{"service": "healthy and serving"}' grpc-java-v2-whjkce3kva-em.a.run.app:443 Health.Check
+  grpcurl -proto src/main/proto/hello.proto -d '{"message": "Hello"}' grpc-java-v2-whjkce3kva-em.a.run.app:443 HelloWorldService.hello
+done
+```
