@@ -7,7 +7,7 @@ import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
 
 @GrpcService
-public class HelloWorldServiceImpl  extends HelloWorldServiceGrpc.HelloWorldServiceImplBase {
+public class HelloWorldServiceImpl extends HelloWorldServiceGrpc.HelloWorldServiceImplBase {
 
   @Override
   public void hello(HelloWorldRequest request,
